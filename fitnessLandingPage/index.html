@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Landing Page</title>
+</head>
+<body>
+    
+    <section>
+        <header>
+            <a href="#" class="logo">Fitness</a>
+            <div class="toggleMenu" onclick="toggleMenu();"></div><!--togglesMenu-->
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Trainers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul><!--navigation-->
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Build Perfect Body</br>
+                With Clean Mind</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus at libero commodi quia odit deleniti.</p>
+            <a href="#">Get Started</a>
+            </div><!--contentBx-->
+        </div><!--content-->
+        <ul class="sci">
+            <li><a href="#"><img src="/images/facebook.png"></a></li>
+            <li><a href="#"><img src="/images/twitter.png"></a></li>
+            <li><a href="#"><img src="/images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
